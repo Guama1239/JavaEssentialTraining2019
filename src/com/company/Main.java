@@ -9,5 +9,9 @@ public class Main {
 
         String howMany = 20 + " things";
         System.out.println(howMany);
+
+        int inValue = 42;
+        String fromInt = Integer.toString(inValue);
+        System.out.println(fromInt);
     }
 }
