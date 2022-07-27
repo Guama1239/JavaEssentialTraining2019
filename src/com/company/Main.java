@@ -5,21 +5,19 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        var i1 = getInput(sc, "Enter value 1: ");
-        var i2 = getInput(sc, "Enter value 2: ");
 
-        double result = addValues(i1, i2);
-        System.out.println("The sum is " + result);
-    }
+        var sc = new Scanner(System.in);
 
-    private static int getInput(Scanner sc, String prompt) {
-        System.out.print(prompt);
-        return sc.nextInt();
-    }
+        System.out.print("Enter a numeric value: ");
+        var d1 = sc.nextDouble();
 
-    private static double addValues(int i1, int i2) {
-        return i1 + i2;
+        System.out.print("Enter a numeric value: ");
+        var d2 = sc.nextDouble();
+
+        double result = d1 / d2;
+
+        System.out.println("The answer is " + result);
     }
 
 }
+
