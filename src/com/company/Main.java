@@ -8,15 +8,19 @@ public class Main {
 
         var sc = new Scanner(System.in);
 
-        System.out.print("Enter a numeric value: ");
-        var d1 = sc.nextDouble();
+        double d1 = getaDouble(sc, "Enter numeric value 1: ");
 
-        System.out.print("Enter a numeric value: ");
-        var d2 = sc.nextDouble();
+        double d2 = getaDouble(sc, "Enter numeric value 2: ");
 
         double result = d1 / d2;
 
         System.out.println("The answer is " + result);
+    }
+
+    private static double getaDouble(Scanner sc, String prompt) {
+        System.out.print(prompt);
+        var d1 = sc.nextDouble();
+        return d1;
     }
 
 }
